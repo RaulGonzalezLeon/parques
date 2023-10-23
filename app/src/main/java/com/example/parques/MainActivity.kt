@@ -10,6 +10,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        var DialogoP = DialogoParque()
 
         binding.bGuardar.setOnClickListener {
             Log.d("NOMBRE: ", binding.tbNombre.text.toString())
@@ -22,6 +23,7 @@ class MainActivity : AppCompatActivity() {
             Log.d("PARQUE INFANTIL: ", binding.cbParqueInfantil.isChecked.toString())
             Log.d("RESTAURANTE: ", binding.cbRestaurante.isChecked.toString())
             Log.d("ZONA DE MASCOTAS: ", binding.cbZonaDeMascotas.isChecked.toString())
+            DialogoP.show(supportFragmentManager, "Dialogo")
         }
     }
 }

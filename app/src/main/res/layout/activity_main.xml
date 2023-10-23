@@ -25,15 +25,16 @@
 
     <EditText
         android:id="@+id/tbNombre"
-        android:layout_width="341dp"
-        android:layout_height="41dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="4dp"
         android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="Nombre"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imagen" />
+        app:layout_constraintTop_toBottomOf="@+id/imagen" />
 
     <EditText
         android:id="@+id/tbDescripcion"
@@ -111,7 +112,9 @@
         android:layout_width="195dp"
         android:layout_height="27dp"
         android:layout_marginTop="16dp"
+        android:layout_marginBottom="234dp"
         android:entries="@array/horas"
+        app:layout_constraintBottom_toTopOf="@+id/bGuardar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
